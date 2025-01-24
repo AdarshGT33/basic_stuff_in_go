@@ -1,0 +1,10 @@
+version: "3"
+
+tasks:
+    build:
+        desc: Build the app
+        cmd: -GoFlags=-mod=mod go build -o bin/go_rest_api internal/main.go
+
+    run:
+        desc: Run the app
+        cmd: -GoFlags=-mod=mod go run internal/main.go
